@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="96px" height="91px" viewBox="0 0 96 91" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>symbol_colors</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="landingpage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-138.000000, -570.000000)">
+            <g id="symbol_colors" transform="translate(138.000000, 571.000000)">
+                <path d="M37.7432542,51.5833866 C25.1237852,50.393576 30.9228388,38.4795339 39.0757568,34.2975974 C46.9901428,30.2380129 60.295874,29.8649247 69.7146236,29.8649246 C94.5221346,29.8649243 109.626937,55.4005259 89.0402577,71.5292466 C82.5702307,76.5982165 40.7126014,85.9250469 33.6550915,75.9619195 C26.9055332,66.4335291 63.7402249,55.9448627 48.0319625,52.4696876 L37.7432542,51.5833866 Z" id="Path-1901" stroke="#0E5177" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(64.547373, 55.118620) rotate(55.000000) translate(-64.547373, -55.118620) "></path>
+                <polygon id="Rectangle-956" stroke="#0E5177" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-opacity="0.3" fill="#247DB0" points="3.5 0 14 0 12.25 59.5 5.25 59.5"></polygon>
+                <circle id="Oval-812" stroke="#0E5177" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-opacity="0.3" fill="#247DB0" cx="70" cy="40.25" r="5.25"></circle>
+                <circle id="Oval-812" stroke="#0E5177" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-opacity="0.3" fill="#247DB0" cx="78.75" cy="54.25" r="5.25"></circle>
+                <circle id="Oval-812" stroke="#0E5177" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-opacity="0.3" fill="#247DB0" cx="73.5" cy="71.75" r="5.25"></circle>
+                <circle id="Oval-812" stroke="#0E5177" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-opacity="0.3" fill="#247DB0" cx="56" cy="63" r="5.25"></circle>
+                <path d="M8.75,89.25 C8.75,89.25 17.5,78.3324916 17.5,73.5 C17.5,68.6675084 13.5824916,64.75 8.75,64.75 C3.91750844,64.75 0,68.6675084 0,73.5 C0,78.3324916 8.75,89.25 8.75,89.25 Z" id="Oval-816" fill-opacity="0.3" fill="#247DB0"></path>
+            </g>
+        </g>
+    </g>
+</svg>

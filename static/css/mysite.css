@@ -1,0 +1,116 @@
+.navbar-brand, #header-navbar >ul >li>a{
+	color: #fff !important;
+}
+
+.navbar-static-top, .site-header{
+  background-color: #247db0;
+  color: #fff;
+}
+
+.site-header {
+  text-align: center;
+}
+
+.jumbotron {
+  padding-bottom: 48px !important;
+  padding-bottom: 48px !important;
+  min-height: 600px;
+}
+
+.jumbotron h1 {
+  margin-top: 100px;
+  font-size: 52px;
+  font-weight: 300;
+}
+
+.subtitle {
+  font-weight: 300 !important;
+  font-size: 32px !important;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 20px !important;
+}
+
+a.btn {
+  color: #fff;
+  border-radius: 60px;
+  border: 1px solid #0e5177;
+  background-color: rgba(0,0,0,0);
+  padding: 20px 25px;
+  margin: 15px 10px 0px;
+  text-transform: uppercase;
+}
+
+a.btn-default:hover {
+  background-color: rgba(0,0,0,0.1) !important;
+}
+
+.introduce {
+  margin-top: 50px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+}
+
+.introduce-item {
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+.introduce-item code {
+  color: #6666CC;
+}
+
+.introduce h1 {
+  color: #0e5177;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.introduce-img-right {
+  text-align: right;
+}
+
+.introduce-img img{
+  height: 100px;
+  width: 100px;
+}
+
+.introduce-img-left {
+  text-align: left;
+}
+
+.introduce-content {
+  max-width: 400px;
+  margin: auto;
+}
+
+.introduce-content h3 {
+  margin-top: 0;
+  color: #0e5177;
+  font-size: 22px;
+}
+
+.introduce-content p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  margin: -18px 0 0;
+  color: #fff;
+  background-color: #247db0;
+	text-align: center;
+	height: 100px;
+}
+
+.footer a {
+  color: #90d7ec;
+}
+
+.footer p {
+  padding-top: 30px;
+  margin-bottom: 0;
+}

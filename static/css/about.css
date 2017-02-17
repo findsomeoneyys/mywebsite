@@ -1,0 +1,90 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #68B6E3;
+}
+
+.navbar-brand,
+#header-navbar>ul>li>a {
+    color: #fff !important;
+}
+
+.navbar-fixed-top,
+.site-header,
+.header-navbar {
+    background-color: #68B6E3;
+    color: #fff;
+}
+
+
+.site-header {
+    text-align: center;
+}
+
+.jumwrapper {
+    padding-bottom: 100px;
+}
+
+.left-summary h1 {
+    font-size: 1.9em !important;
+    max-width: 700px;
+    margin: 20px 0 0;
+    color: #FFFFFF;
+}
+
+.left-summary h2 {
+    font-size: 1.3em;
+    max-width: 700px;
+    margin: 0 0 2em;
+    color: #F3F3F3;
+    line-height: 25px;
+}
+
+.jumbotron {
+    background-color: #68B6E3;
+}
+
+.head-pic {
+    padding-top: 10px;
+}
+
+.right-summary a {
+    color: #FFFFFF;
+}
+
+.right-summary .row {
+    margin-bottom: 20px;
+}
+
+.right-summary .row .social-href {
+    padding-top: 5px;
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    margin: -18px 0 0;
+    color: #fff;
+    background-color: #247db0;
+    text-align: center;
+    height: 100px;
+    bottom: 0;
+}
+
+.footer a {
+    color: #90d7ec;
+}
+
+.footer p {
+    padding-top: 30px;
+    margin-bottom: 0;
+}
