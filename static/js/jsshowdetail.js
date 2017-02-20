@@ -1,4 +1,7 @@
 function insertPeople(people, start = 1, stop = 1) {
+    if (people['records'] > 1) {
+        people['records'] = people['records'].pop(0);
+    };
     let tds = [];
     tds.push('<tr>');
     tds.push('<td>' + start + '</td>');
@@ -14,6 +17,30 @@ function insertPeople(people, start = 1, stop = 1) {
     tds.push('</tr>');
     let newarr = tds.join('');
     $('tbody').append(newarr);
+}
+
+//当records记录有多条的时候调用
+function insertPeopleMany(peoples) {
+    let start = 1;
+    let stop = peoples['records'].length;
+    for (let record of peoplesp['records']) {
+        let tds = [];
+        tds.push('<tr>');
+        tds.push('<td>' + start + '</td>');
+        start += 1;
+        tds.push('<td>' + peoples['name'] + '</td>');
+        tds.push('<td>' + record['address'] + '</td>');
+        tds.push('<td>' + record['from'] + '</td>');
+        tds.push('<td>' + record['url'] + '</td>');
+        if (people.hasOwnProperty('search_count')) {
+            tds.push('<td>' + peoples['search_count'] + '</td>');
+        } else {
+            tds.push('<td>' + '0' + '</td>');
+        };
+        tds.push('</tr>');
+        let newarr = tds.join('');
+        $('tbody').append(newarr);
+    }
 }
 
 function updateTable(url) {
@@ -67,14 +94,18 @@ $(function() {
     });
 
     $('form').on('submit', function() {
-        console.log("flase");
         let requrl = 'api/v1.0/people/' + $('#searchInput').val()
         $.ajax({
             url: requrl,
             success: function(result) {
                 $('tbody').empty();
                 // console.log(result);
-                insertPeople(result);
+                if (result['record'].length > 1) {
+                    insertPeopleMany(result);
+                } else {
+                    insertPeople(result);
+                }
+
             },
             error: function() {
                 // alert('no this person!');
@@ -87,6 +118,11 @@ $(function() {
 
     $('#search-button').on('click', function() {
         $('form').submit();
+    });
+
+    $.getJSON('api/v1.0/people/习近平', function(result) {
+        console.log('111');
+        console.log(result['records']);
     });
 
 
