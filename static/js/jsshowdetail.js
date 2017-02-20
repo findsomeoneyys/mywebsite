@@ -1,6 +1,6 @@
 function insertPeople(people, start = 1, stop = 1) {
-    if (people['records'] > 1) {
-        people['records'] = people['records'].pop(0);
+    if (people['records'].length > 1) {
+        people['records'] = people['records'].shift();
     };
     let tds = [];
     tds.push('<tr>');
@@ -23,7 +23,7 @@ function insertPeople(people, start = 1, stop = 1) {
 function insertPeopleMany(peoples) {
     let start = 1;
     let stop = peoples['records'].length;
-    for (let record of peoplesp['records']) {
+    for (let record of peoples['records']) {
         let tds = [];
         tds.push('<tr>');
         tds.push('<td>' + start + '</td>');
@@ -32,7 +32,7 @@ function insertPeopleMany(peoples) {
         tds.push('<td>' + record['address'] + '</td>');
         tds.push('<td>' + record['from'] + '</td>');
         tds.push('<td>' + record['url'] + '</td>');
-        if (people.hasOwnProperty('search_count')) {
+        if (peoples.hasOwnProperty('search_count')) {
             tds.push('<td>' + peoples['search_count'] + '</td>');
         } else {
             tds.push('<td>' + '0' + '</td>');
@@ -100,7 +100,7 @@ $(function() {
             success: function(result) {
                 $('tbody').empty();
                 // console.log(result);
-                if (result['record'].length > 1) {
+                if (result['records'].length > 1) {
                     insertPeopleMany(result);
                 } else {
                     insertPeople(result);
@@ -120,10 +120,6 @@ $(function() {
         $('form').submit();
     });
 
-    $.getJSON('api/v1.0/people/习近平', function(result) {
-        console.log('111');
-        console.log(result['records']);
-    });
 
 
 
